@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="googlebot" content="noindex, nofollow">
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.9.1.js"></script> 
+    <link rel="stylesheet" type="text/css" href="/css/result-light.css">  
+      <script type="text/javascript" src="http://code.highcharts.com/stock/highstock.js"></script>
+  <style type="text/css">
+    .chart {
+			height: 600px;
+			width: 600px;
+			margin: auto;
+}
+
+.spacer {
+    height: 20px;
+}
+  </style>
+
+  <title>Reporting Portal</title>
+  
+</head>
+<body>
+
+<script type='text/javascript' src="pie/armed_once.js"></script>
+<script type='text/javascript' src="pie/arming_frequency.js"></script>
+<script type='text/javascript' src="pie/arm_type.js"></script>
+
+ <div id="arming-frequency" class="chart"></div> 
+ <div class="spacer"></div>
+ <div id="armed" class="chart"></div> 
+ <div class="spacer"></div>
+ <div id="arm-type" class="chart"></div> 
+
+  <script>
+  // tell the embed parent frame the height of the content
+  if (window.parent && window.parent.parent){
+    window.parent.parent.postMessage(["resultsFrame", {
+      height: document.body.getBoundingClientRect().height,
+      slug: "7cvCX"
+    }], "*")
+  }
+</script>
+</body>
+
+</html>
